@@ -1,0 +1,25 @@
+.root {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .pageTitle {
+        text-align: center;
+    }
+    .questionContainer {
+        @extend .root;
+        height: 300px;
+        .flag {
+            padding: 20px;
+            height: 120px;
+        }
+        .countryName {
+            font-size: 25px;
+        }
+    }
+    .answerContainer {
+        @extend .root;
+        width: 50%;
+    }
+}

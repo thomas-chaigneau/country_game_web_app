@@ -1,0 +1,21 @@
+.modalContentContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    .answerStatus {
+        font-size: 25px;
+        padding: 5px;
+    }
+    .countryName {
+        font-size: 15px;
+        padding: 5px;
+    }
+    .countryPop {
+        font-size: 17px;
+        padding: 5px;
+        
+    }
+
+}

@@ -1,0 +1,16 @@
+@import '../../../../../theme/colors/';
+
+.root {
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: setColor(blue, rich-black);
+    color: setColor(white, blue);
+    padding: 5px 15px;
+    cursor: pointer;
+    outline: none;
+    .text {
+        position: relative;
+    }
+}

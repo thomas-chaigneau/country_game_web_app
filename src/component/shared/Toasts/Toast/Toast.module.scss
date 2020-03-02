@@ -1,0 +1,39 @@
+@import "../../../../theme/_colors.scss";
+
+.root {
+    margin-bottom: 5px;
+    position: relative;
+    animation-name: slidein;
+    animation-duration: 0.5s;
+
+    .type-ERROR {
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        padding: 8px 0;
+        background-color: setColor(white, ivory);
+        border: 2px solid setColor(red, alabama);
+    }
+
+    .type-SUCCESS {
+        @extend .type-ERROR;
+        border: 2px solid setColor(green, dark);
+
+    }
+
+    .icon {
+        margin-left: 30px;
+        width: 20px;
+        height: 20px;
+    }
+    .message {
+        margin-left: 20px;
+        font-size: 12px;
+    }
+}
+
+    @keyframes slidein {
+        0% { right: -60px; opacity: 0}
+        50% { right: -5px }
+        100% { right: 0; opacity: 0.8 }
+    }

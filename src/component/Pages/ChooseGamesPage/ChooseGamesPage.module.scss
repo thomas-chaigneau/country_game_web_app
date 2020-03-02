@@ -1,0 +1,24 @@
+@import '../.../../../../theme/_colors';
+
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .gameButtonContainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .gameButton {
+            cursor: pointer;
+            border: 2px solid setColor(blue, rich-black);
+            border-radius: 5px;
+            background-color: setColor(blue, dark-slate);
+            padding: 30px;
+            margin: 30px;
+            width: 120px;
+            outline: none;
+            color: setColor(white, ivory);
+        }
+    }
+}

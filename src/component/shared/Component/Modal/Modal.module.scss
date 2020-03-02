@@ -1,0 +1,25 @@
+@import '../../../../theme/_colors';
+
+.root {
+    width: 70%;
+    position: absolute;
+    top: 25%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    left: 15%;
+    box-sizing: border-box;
+    .title {
+        text-align: center;
+        padding: 5px;
+    }
+    .buttonsContainer {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .button {
+            margin: 0 5px;
+            width: 25%;
+        }
+    }
+}

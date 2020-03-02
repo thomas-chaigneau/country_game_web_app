@@ -1,0 +1,11 @@
+@import'../theme/colors.scss';
+
+.root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #c4e5b1;
+    font-family: 'Montserrat', sans-serif;
+    color: setColor(green, very-dark);
+}

@@ -1,0 +1,63 @@
+.root {
+    width: 100%;
+    padding: 8px 20px;
+    display: inline-block;
+    border: 1px solid #419632;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #67cc79;
+    transition: all 0.5s;
+    cursor: pointer;
+    outline: none;
+
+    .text {
+        transition: 0.5s;
+        position: relative;
+        margin-left: 25px;
+        color: #193913;
+    }
+
+    .text:after {
+        content: "\00bb";
+        transition: 0.5s;
+        margin-left: 5px;
+        opacity: 0;
+        color: #193913;
+    }
+
+    &:hover .text {
+        margin-right: 10px;
+    }
+
+    &:hover .text:after {
+        opacity: 1;
+        margin-left: 10px;
+    }
+
+    .loading {
+        margin-right: 2px;
+    }
+
+    .loading:after {
+        display: none;
+    }
+
+    
+    .loader {
+        position: absolute;
+        animation: rotating 0.5s linear infinite;
+        height: 8px;
+        width: 8px;
+        border: 1px solid #193913;
+        border-right: transparent;
+        border-radius: 50%;
+        margin-top: 4px;
+        margin-left: 10px;
+    }
+
+    @keyframes rotating {
+        0% { transform: rotate(0deg) }
+        50% { transform: rotate(250deg) }
+        100% { transform: rotate(360deg) }
+    }
+}
